@@ -1,0 +1,11 @@
+html
+  head
+    title= title
+  body
+    label Choose city
+    form(action="/weather" method="POST")
+        select(name="selected_option")
+            each item in options
+                option=item
+        input(type='submit')
+        p=weather
